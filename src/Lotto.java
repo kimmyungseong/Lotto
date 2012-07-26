@@ -10,7 +10,7 @@ public class Lotto {
 
 	}
 
-	public void getLotto() {
+	public int[] getLotto() {
 	int[] numbers = new int[6];
 		for (int i = 0; i < 6; i++) {
 			numbers[i] = getNumber();
@@ -20,7 +20,7 @@ public class Lotto {
 
  Random random = new Random();
 
-	private int getNumber(Random random) {
+	private int getNumber() {
 		return random.nextInt(45);
 	}
 
